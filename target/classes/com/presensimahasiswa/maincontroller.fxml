@@ -5,23 +5,17 @@
 
 <AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
     <children>
-        <!-- Table untuk menampilkan daftar mahasiswa -->
         <TableView fx:id="tableMahasiswa" AnchorPane.topAnchor="20" AnchorPane.leftAnchor="20"
             AnchorPane.rightAnchor="20" AnchorPane.bottomAnchor="100">
             <columns>
-                <!-- Kolom Nama -->
                 <TableColumn fx:id="colNama" text="Nama" />
-
-                <!-- Kolom NPM -->
                 <TableColumn fx:id="colNpm" text="NPM" />
             </columns>
         </TableView>
 
-        <!-- Tombol untuk menambah mahasiswa -->
         <Button text="Tambah Mahasiswa" fx:id="btnTambah" AnchorPane.leftAnchor="20"
             AnchorPane.bottomAnchor="20" onAction="#handleTambah" />
 
-        <!-- Tombol untuk input presensi -->
         <Button text="Input Presensi" fx:id="btnPresensi" AnchorPane.rightAnchor="20"
             AnchorPane.bottomAnchor="20" onAction="#handlePresensi" />
     </children>
