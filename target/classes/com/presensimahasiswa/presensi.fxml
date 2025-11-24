@@ -1,0 +1,26 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.input.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PresensiController">
+    <children>
+        <Label text="Nama Mahasiswa" AnchorPane.topAnchor="20" AnchorPane.leftAnchor="20" />
+        <TextField fx:id="fieldNama" AnchorPane.topAnchor="50" AnchorPane.leftAnchor="20" />
+
+        <Label text="Tanggal Presensi" AnchorPane.topAnchor="100" AnchorPane.leftAnchor="20" />
+        <DatePicker fx:id="fieldTanggal" AnchorPane.topAnchor="130" AnchorPane.leftAnchor="20" />
+
+        <Label text="Status Presensi" AnchorPane.topAnchor="180" AnchorPane.leftAnchor="20" />
+        <ComboBox fx:id="fieldStatus" AnchorPane.topAnchor="210" AnchorPane.leftAnchor="20">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="Hadir" />
+                    <String fx:value="Tidak Hadir" />
+                </FXCollections>
+            </items>
+        </ComboBox>
+
+        <Button text="Simpan" fx:id="btnSimpan" AnchorPane.bottomAnchor="20"
+            AnchorPane.rightAnchor="20" />
+    </children>
+</AnchorPane>
